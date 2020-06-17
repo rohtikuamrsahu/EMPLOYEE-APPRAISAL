@@ -1,0 +1,51 @@
+<!-- <form method="post"  #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <p>
+      <label for="login">Name:</label>
+      <input type="text" name="name" id="login" placeholder="Enter your name here" ngModel >
+    </p>
+
+    <p>
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" placeholder="Enter password here" ngModel >
+    </p>
+
+    <p class="login-submit">
+      <button type="submit" class="login-button" >Login</button>
+    </p>
+
+    <p class="forgot-password"><a href="index.html">Signup if you don't have an</a></p>
+
+</form> -->
+
+
+ <!-- <div class="login-page">
+  <div class="form">
+    <form class="register-form"> 
+      <input type="text" name="name" placeholder="name" />
+      <input type="password" name="password" placeholder="password"/>
+      
+      <button type="submit">Login</button>
+      <p class="message">Not registered? <a href="#">Sign In</a></p>
+    </form>
+    
+  </div>
+</div>  -->
+<div class="mainclass">
+<div class="login-page">
+  <div class="form">
+    <!-- <form class="register-form">
+      <input type="text" placeholder="name"/>
+      <input type="password" placeholder="password"/>
+      <input type="text" placeholder="email address"/>
+      <button>create</button>
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form> -->
+    <form class="login-form" #f="ngForm" (ngSubmit)="onSubmit(f)" >
+      <input type="text" name="name" placeholder="username" ngModel/>
+      <input type="password" name="password" placeholder="password" ngModel/>
+      <button type="submit">login</button>
+      <p class="message">Not registered? <a href="#">Create an account</a></p>
+    </form>
+  </div>
+</div>
+</div>
